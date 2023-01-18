@@ -15,8 +15,7 @@
 	],
 	"activationEvents": [
 		"onFileSystem:file",
-		"onNotebook:liveshare-jupyter-notebook",
-		"onNotebookSerializer:liveshare-jupyter-notebook"
+		"onNotebook:liveshare-jupyter-notebook"
 	],
 	"main": "./out/extension.js",
 	"scripts": {
