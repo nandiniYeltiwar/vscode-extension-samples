@@ -15,9 +15,18 @@
 	],
 	"activationEvents": [
 		"onFileSystem:file",
-		"onNotebook:liveshare-jupyter-notebook"
+		"onNotebook:liveshare-jupyter-notebook",
+		"onCommand:notebook-serializer-sample.createJsonNotebook"
 	],
 	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "notebook-serializer-sample.createJsonNotebook",
+				"title": "Create JSON Notebook"
+			}
+		]
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -b",
